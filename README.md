@@ -2,12 +2,9 @@
 
 Thing should be considered
 
-- Folder structure
-- Environment variable
-- Navigation
-- Theme
-- Network
-- Testing
+- Scalability
+- Omnideveloper
+- Testability
 
 My approach is to go to folder by feature:
 
