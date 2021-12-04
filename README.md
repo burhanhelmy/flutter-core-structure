@@ -42,20 +42,20 @@ __Folder structure__
 |  |  |  |- buttons.dart // example
 |  |  |  
 |  |  |- ▼ services
-|  |  |  |- ▼ session
-|  |  |  |  |- session.dart
-|  |  |  |  
-|  |  |  |- ▼ network
-|  |  |  |  |- network.dart
-|  |  |  |  |- http_service.dart
-|  |  |  |  |- interceptor_service.dart
-|  |  |  |  |- urls.dart
-|  |  |  |  
-|  |  |  |- ▼ data
-|  |  |     |- data.dart // example
-|  |  |     |- sql_lite_service.dart // example
-|  |  |     |- shared_preferences_service.dart // example
-|  |  |
+|  |     |- ▼ session
+|  |     |  |- session.dart
+|  |     |  
+|  |     |- ▼ network
+|  |     |  |- network.dart
+|  |     |  |- http_service.dart
+|  |     |  |- interceptor_service.dart
+|  |     |  |- urls.dart
+|  |     |  
+|  |     |- ▼ data
+|  |        |- data.dart // example
+|  |        |- sql_lite_service.dart // example
+|  |        |- shared_preferences_service.dart // example
+|  |   
 |  |- ▼ modules
 |     |- ▼ authentication
 |     |  |- authentication.dart
