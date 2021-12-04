@@ -91,6 +91,7 @@ __Folder structure__
    |  |- test_util.dart
    |  |- app.dart // to prep app to be testable as a widget
    |  |- mock.dart // all mock class
+   | 
    |- test_widget
    |- test_integration
    |- ▼ test_unit
