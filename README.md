@@ -2,12 +2,9 @@
 
 Thing should be considered
 
-- Folder structure
-- Environment variable
-- Navigation
-- Theme
-- Network
-- Testing
+- Scalability
+- Omni developer
+- Testability
 
 My approach is to go to folder by feature:
 
@@ -45,42 +42,43 @@ __Folder structure__
 |  |  |  |- buttons.dart // example
 |  |  |  
 |  |  |- ▼ services
-|  |  |  |- ▼ session
-|  |  |  |  |- session.dart
-|  |  |  |- ▼ network
-|  |  |  |  |- network.dart
-|  |  |  |  |- http_service.dart
-|  |  |  |  |- interceptor_service.dart
-|  |  |  |  |- urls.dart
-|  |  |  |  
-|  |  |  |- ▼ data
-|  |  |     |- data.dart // example
-|  |  |     |- sql_lite_service.dart // example
-|  |  |     |- shared_preferences_service.dart // example
-|  |  |
+|  |     |- ▼ session
+|  |     |  |- session.dart
+|  |     |  
+|  |     |- ▼ network
+|  |     |  |- network.dart
+|  |     |  |- http_service.dart
+|  |     |  |- interceptor_service.dart
+|  |     |  |- urls.dart
+|  |     |  
+|  |     |- ▼ data
+|  |        |- data.dart // example
+|  |        |- sql_lite_service.dart // example
+|  |        |- shared_preferences_service.dart // example
+|  |   
 |  |- ▼ modules
-|  |  |- ▼ authentication
-|  |  |  |- authentication.dart
-|  |  |  |- screens
-|  |  |  |- widgets
-|  |  |  |- blocs
-|  |  |  |- repository
-|  |  |  |- models
-|  |  |  |- ▼ utils
-|  |  |     |- const // enums etc
-|  |  |   
-|  |  |- ▼ splash
-|  |  |  |- splash.dart
-|  |  |  |- screens
-|  |  |  |- blocs
-|  |  |  |- repository
-|  |  |  |- models
-|  |  |  |- ▼ utils
-|  |  |     |- const 
-|  |  |   
-|  |  |- ▼ onboarding
-|  |     |- // same as above
-|  | 
+|     |- ▼ authentication
+|     |  |- authentication.dart
+|     |  |- screens
+|     |  |- widgets
+|     |  |- blocs
+|     |  |- repository
+|     |  |- models
+|     |  |- ▼ utils
+|     |     |- const // enums etc
+|     |   
+|     |- ▼ splash
+|     |  |- splash.dart
+|     |  |- screens
+|     |  |- blocs
+|     |  |- repository
+|     |  |- models
+|     |  |- ▼ utils
+|     |     |- const 
+|     |   
+|     |- ▼ onboarding
+|        |- // same as above
+|    
 |- ► web
 |- ► ios
 |- ► android
@@ -93,6 +91,7 @@ __Folder structure__
    |  |- test_util.dart
    |  |- app.dart // to prep app to be testable as a widget
    |  |- mock.dart // all mock class
+   | 
    |- test_widget
    |- test_integration
    |- ▼ test_unit
