@@ -1,15 +1,22 @@
-# flutter-core-structure
+# 🥞 &nbsp; flutter-core-structure
 
-Thing should be considered
+```
+👨‍🍳  This is a living document and might need an update when the time is come.
+```
+
+## 🧠 &nbsp; Thing should be considered:
 
 - Scalability
-- Omni developer
+- Collaboration
 - Testability
 
-My approach is to go to folder by feature:
+</br>
 
+## 🚀 &nbsp; I decide to go with [folder by feature](https://softwareengineering.stackexchange.com/questions/338597/folder-by-type-or-folder-by-feature) approach.
 
-__Folder structure__
+</br>
+
+## 📁 &nbsp; Folder structure
 
 
 ```
@@ -18,25 +25,21 @@ __Folder structure__
 |  |- app.dart // combine all config and util 
 |  |- ▼ config // app specific
 |  |  |- ▼ theme
-|  |  |  |- theme.dart
 |  |  |  |- dark.dart
 |  |  |  |- light.dart
 |  |  |  |- colors.dart
 |  |  |  
 |  |  |- ▼ route
-|  |  |  |- route.dart
 |  |  |  |- route_guard.dart
 |  |  |  |- routes.dart
 |  |  |  
 |  |  |- ▼ environment
-|  |     |- environment.dart
 |  |     |- prod.dart
 |  |     |- uat.dart
 |  |     |- uat.dart
 |  |     |- sit.dart
 |  |     
 |  |- ▼ util // should only reusable item be put here
-|  |  |- util.dart
 |  |  |- ▼ ui 
 |  |  |  |- dialogs.dart // example
 |  |  |  |- buttons.dart // example
@@ -44,22 +47,29 @@ __Folder structure__
 |  |  |- ▼ services
 |  |     |- ▼ session
 |  |     |  |- session.dart
+|  |     |
+|  |     |- ▼ translation
+|  |     |  |- translation.dart
 |  |     |  
 |  |     |- ▼ network
-|  |     |  |- network.dart
-|  |     |  |- http_service.dart
-|  |     |  |- interceptor_service.dart
-|  |     |  |- urls.dart
+|  |     |  |- ▼ http 
+|  |     |  |  |- http_service.dart
+|  |     |  |  |- interceptor_service.dart
+|  |     |  |  |- urls.dart
+|  |     |  |
+|  |     |  |- ▼ GraphQL
+|  |     |     |- query.dart
+|  |     |     |- interceptor_service.dart
+|  |     |     |- urls.dart
 |  |     |  
 |  |     |- ▼ data
-|  |        |- data.dart // example
+|  |        |- firestore.dart // example
 |  |        |- sql_lite_service.dart // example
 |  |        |- shared_preferences_service.dart // example
 |  |   
 |  |- ▼ modules
 |     |- ▼ authentication
-|     |  |- authentication.dart
-|     |  |- screens
+|     |  |- presentation // screen, view or page
 |     |  |- widgets
 |     |  |- blocs
 |     |  |- repository
@@ -68,8 +78,7 @@ __Folder structure__
 |     |     |- const // enums etc
 |     |   
 |     |- ▼ splash
-|     |  |- splash.dart
-|     |  |- screens
+|     |  |- presentation // screen, view or page
 |     |  |- blocs
 |     |  |- repository
 |     |  |- models
